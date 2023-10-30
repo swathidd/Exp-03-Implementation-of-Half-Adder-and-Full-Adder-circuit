@@ -35,57 +35,64 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 # Procedure
 
 Connect the supply (+5V) to the circuit
+
 Switch ON the main switch
+
 If the output is 1, then the led glows.
 
 # Program:
-/*
+
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:
+
+Developed by:D.SWATHI 
+
+RegisterNumber:212222230154
 # HALF ADDER:
+```
 module ex03(a,b,sum,carry);
 input a,b;
 output sum,carry;
 assign sum=a^b;
 assign carry=a&b;
 endmodule
+```
 # FULL ADDER:
+```
 module fulladder(a,b,cin,sum,carry);
 input a,b,cin;
 output sum,carry;
 assign sum=a^b^cin;
 assign carry=(a&b)|((a^b)&cin);
 endmodule
-*/
+```
 # Output:
-1. RTL
+# 1. RTL
 
-HALF ADDER
+# HALF ADDER
 
 ![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/7567b145-1cc6-4b5f-b2cc-03649206c05f)
 
-FULL ADDER
+# FULL ADDER
 
 ![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/8f25f072-c8ca-4dc3-ada0-f3bc6a5dab7c)
 
 # 2.TRUTH TABLE
 
-HALF ADDER
+# HALF ADDER
 
 ![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/e04a5ebd-468c-488f-9c95-9c26d49b42a7)
 
-FULL ADDER
+# FULL ADDER
 
 ![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/c520bceb-ea5c-402d-9afb-40ec723f0aaf)
 
 # 3.WAVEFORM
 
-HALF ADDER
+# HALF ADDER
 
 ![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/0a222bc3-eef4-4876-b6ac-03b723e69442)
 
-FULL ADDER
+# FULL ADDER
 
 ![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/a4ce5d4c-d477-428a-a626-b46d1c60208d)
 
