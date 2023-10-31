@@ -1,7 +1,7 @@
 # Developed by:D.SWATHI 
 # RegisterNumber:212222230154
 
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
 # AIM:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
 
@@ -49,16 +49,16 @@ Developed by:D.SWATHI
 RegisterNumber:212222230154
 # HALF ADDER:
 ```
-module ex03(a,b,sum,carry);
-input a,b;
+module ex03(A,B,sum,carry);
+input A,B;
 output sum,carry;
-assign sum=a^b;
-assign carry=a&b;
+assign sum=A^B;
+assign carry=A&B;
 endmodule
 ```
 # FULL ADDER:
 ```
-module fulladder(a,b,cin,sum,carry);
+module fulladder(a,Bb,cin,sum,carry);
 input a,b,cin;
 output sum,carry;
 assign sum=a^b^cin;
@@ -74,7 +74,8 @@ endmodule
 
 # FULL ADDER
 
-![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/8f25f072-c8ca-4dc3-ada0-f3bc6a5dab7c)
+![image](https://github.com/swathidd/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/121300272/512b65cd-e9a6-4ffe-8b25-a8ae1fceab3a)
+
 
 # 2.TRUTH TABLE
 
