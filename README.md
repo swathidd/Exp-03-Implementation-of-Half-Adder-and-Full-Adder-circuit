@@ -58,7 +58,7 @@ endmodule
 ```
 # FULL ADDER:
 ```
-module fulladder(a,Bb,cin,sum,carry);
+module fulladder(a,b,cin,sum,carry);
 input a,b,cin;
 output sum,carry;
 assign sum=a^b^cin;
